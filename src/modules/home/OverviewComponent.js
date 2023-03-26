@@ -109,15 +109,19 @@ margin: 20px;
 const ExpenseBox = styled.div`
 display: flex;
 flex-direction: column;
-border-radius: 4px;
-border: 1px solid #e6e8e9;
+border-radius: 50px;
+border: 2px solid #e6e8e9;
 padding: 15px 20px;
 width: 135px;
 font-size: 14px;
+&:hover {
+    border: 2px solid ${(props) => (props.isIncome ?"green":"red")}
+  }
 & span{
     font-weight: bold;
     font-size: 20px;
     color: ${(props) => (props.isIncome ?"green":"red")};
+
 }
 `;
 const OverviewComponent = (props) => {

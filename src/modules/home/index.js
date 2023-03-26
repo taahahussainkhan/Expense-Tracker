@@ -35,7 +35,7 @@ const HomeComponent=(props)=>{
 
     useEffect(()=>calculateBalance(),[transactions]);
     return (
-        <Container>Home Component
+        <Container>By Taaha Hussain Khan
             <OverviewComponent 
             addTransaction={addTransaction}
              expense={expense}
