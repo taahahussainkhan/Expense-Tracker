@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import HomeComponent from "./modules/home";
 
 
 const Container=styled.div`
@@ -18,6 +19,7 @@ font-weight:bold;
 function App() {
   return <Container>
     <Header>Expense Tracker</Header>
+    <HomeComponent/>
   </Container>;
 }
 
